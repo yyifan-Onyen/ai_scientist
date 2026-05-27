@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EMNLP 2026 Tutorial &mdash; AI Scientist: Language Model Agents for End-to-End Research Workflows</title>
-  <meta content="EMNLP 2026 tutorial on AI Scientist. A field map for language model agents that carry out end-to-end research workflows: idea generation, coding, experimentation, analysis, writing, evaluation, and safety." name="description">
-  <meta content="AI Scientist, AI co-scientist, auto research, deep research, language model agents, EMNLP 2026, tutorial, Biomni, AI-Researcher, Kosmos, SciMaster, ResearchGym, ResearchClawBench, scientific discovery" name="keywords">
+  <title>EMNLP 2026 Tutorial &mdash; AI Scientist: Persistent Scientific Systems with Memory, Verification, and Human Governance</title>
+  <meta content="EMNLP 2026 cutting-edge tutorial on AI Scientist. A field map for persistent scientific systems with long-horizon memory, novelty verification, scientific infrastructure, embodied experimentation, epistemic reliability, and human governance." name="description">
+  <meta content="AI Scientist, persistent scientific systems, novelty verification, scientific infrastructure, embodied science, provenance, human governance, EMNLP 2026 tutorial, Biomni, AI co-scientist, LabOS, DeepScientist, Lumilab, VeriTrace, AutoResearchBench, ResearchGym" name="keywords">
 
   <link href="assets/img/others/robot.png" rel="icon">
   <link href="assets/img/others/robot.png" rel="apple-touch-icon">
@@ -54,15 +54,16 @@
       </div>
       <h1 class="mb-4 pb-0">
         AI Scientist
-        <span class="serif">End-to-End Research Workflows</span>
+        <span class="serif">Persistent Scientific Systems</span>
       </h1>
       <h2 class="mb-0">
-        A field map for language model agents that ground, plan, code, experiment,
-        analyze, write, and self-evaluate &mdash; from <em>deep research</em> to <em>autonomous discovery</em>.
+        From workflow agents to persistent systems with memory, novelty verification,
+        scientific infrastructure, embodied experimentation, epistemic reliability,
+        and <em>human governance</em>.
       </h2>
       <div class="hero-meta">
-        <span>Biomni &middot; AI-Researcher &middot; AI co-scientist &middot; Kosmos &middot; SciMaster</span>
-        <span>ResearchGym &middot; ResearchClawBench &middot; Scientist-Bench &middot; LAB-Bench</span>
+        <span>Biomni &middot; AI co-scientist &middot; Kosmos &middot; LabOS &middot; DeepScientist &middot; Lumilab</span>
+        <span>AutoResearchBench &middot; ResearchGym &middot; Scientist-Bench &middot; VeriTrace</span>
         <span>Reading List &middot; Slides &middot; Live Walkthrough</span>
       </div>
     </div>
@@ -75,24 +76,24 @@
       <div class="container position-relative" data-aos="fade-up">
         <span class="about-kicker">&sect; 01 &middot; Premise</span>
         <h2>
-          From chat assistants and deep-research products to
-          <em>artifact-producing research agents.</em>
+          From autonomous workflow agents to
+          <em>persistent scientific systems.</em>
         </h2>
         <div class="row">
           <div class="col-lg-7">
             <p>
-              Language models have moved beyond chat assistants. They now sit inside systems that browse the literature, write and execute code, run simulations, and produce research artifacts such as figures, reports, and even draft papers. We refer to this emerging class of systems as <b>AI Scientists</b>: language model agents that carry out substantial parts of the research loop, rather than answering one question at a time.
+              AI Scientists are evolving from autonomous workflow agents that automate a research pipeline into persistent scientific systems that maintain long-horizon research state, verify novelty against the prior literature, track experimental provenance, execute in real or simulated laboratories, and collaborate with human scientists across iterative discovery loops.
             </p>
             <p>
-              The pace of change accelerated sharply in late 2025 and early 2026. Karpathy's <code>autoresearch</code>, Google's AI co-scientist, FutureHouse's Kosmos, Biomni, AI-Researcher, MiroFlow, OAgents, SciMaster, and Tongyi DeepResearch all appeared in roughly twelve months &mdash; alongside new benchmarks (ResearchGym, ResearchClawBench, Scientist-Bench, LAB-Bench) that ask whether frontier agents can do <em>real research</em> rather than only answer benchmark questions.
+              The view that dominated 2025 &mdash; an AI Scientist as an autonomous agent that runs an end-to-end research pipeline (<em>autoresearch</em>, AI-Researcher) &mdash; has given way to a view in which the AI Scientist is treated as a persistent scientific system (LabOS, DeepScientist, Lumilab, Rethinking the AI Scientist). The hard problems have shifted from agent orchestration to research-state evolution, novelty verification, scientific infrastructure, embodied execution, epistemic reliability, and scientist-in-the-loop governance.
             </p>
           </div>
           <div class="col-lg-5">
             <p>
-              Yet the literature is fragmented across NLP, ML, agent, and domain-specific venues, using different vocabularies for the same concepts. The community lacks a shared map of what an AI Scientist actually does, how its capabilities should be measured, and how NLP should contribute responsibly.
+              The literature is fragmented across NLP, ML, agent, and domain-specific venues, and is organized around outdated framings like &ldquo;end-to-end automation&rdquo; or &ldquo;multi-agent debate.&rdquo; These framings obscure the actual frontier.
             </p>
             <p>
-              This tutorial answers those questions by organizing AI Scientist research around the <em>end-to-end research workflow</em>: a six-stage pipeline that recurs across recent systems regardless of domain.
+              This tutorial reframes AI Scientist research around <em>six concerns</em>: persistent systems, literature discovery and novelty verification, scientific infrastructure, embodied scientific interaction, reliability and provenance, and human governance.
             </p>
           </div>
         </div>
@@ -103,51 +104,51 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>&sect; 02 &middot; Outline</h2>
-          <span class="display-title">Seven blocks along the <em>research workflow</em>.</span>
-          <p>From motivating successes and failures, through foundations of the research loop, to evaluation, reliability, safety, and open problems.</p>
+          <span class="display-title">Seven blocks across the <em>six concerns</em>.</span>
+          <p>From motivating cases through persistent systems, novelty verification, scientific infrastructure, embodied science, reliability, and human governance.</p>
         </div>
 
         <div class="outline-grid">
           <div class="outline-card" data-num="01" data-aos="fade-up" data-aos-delay="50">
             <div class="module-tag">Module 01 &middot; 15 min</div>
             <h4>Welcome &amp; Motivating Cases</h4>
-            <p>Successes and failures from recent AI Scientist systems: a citation-hallucinating drafting agent; a coding agent that cannot reproduce its own results; a biomedical agent that proposes a CRISPR screen; a multi-agent co-scientist that ranks novel hypotheses.</p>
+            <p>Concrete cases: a citation-hallucinating drafting agent; a coding agent that cannot reproduce its own result; a biomedical agent that proposes a CRISPR screen and hands the protocol to a human collaborator; and a long-horizon system with branching, failed paths, and human takeover.</p>
           </div>
           <div class="outline-card" data-num="02" data-aos="fade-up" data-aos-delay="100">
-            <div class="module-tag">Module 02 &middot; 30 min</div>
-            <h4>Foundations of the Research Loop</h4>
-            <p>The common pipeline that recurs across systems: <b>problem &rarr; grounding &rarr; ideation &rarr; planning &rarr; execution &rarr; analysis &rarr; writing &rarr; iteration</b>. Three design axes: autonomy level, loop closure, and artifact scope.</p>
+            <div class="module-tag">Module 02 &middot; 25 min</div>
+            <h4>Scientific Research as a Persistent System</h4>
+            <p>The central reframing of the tutorial. An AI Scientist is not a one-shot pipeline but a persistent system that maintains long-horizon state: <b>hypothesis lineage, experiment graphs, scientific memory, research branching</b>. We compare DeepScientist, Lumilab, and Rethinking the AI Scientist against <em>autoresearch</em> and AI-Researcher.</p>
           </div>
           <div class="outline-card" data-num="03" data-aos="fade-up" data-aos-delay="150">
-            <div class="module-tag">Module 03 &middot; 30 min</div>
-            <h4>Idea Generation &amp; Grounding</h4>
-            <p>Chain-of-Ideas, tournament-style hypothesis evolution, monitor-based RAG, and the meta-problem: <em>which ideas should an agent actually try?</em> Learned idea comparators, citation grounding, and faithfulness.</p>
+            <div class="module-tag">Module 03 &middot; 25 min</div>
+            <h4>Literature Discovery &amp; Novelty Verification</h4>
+            <p><em>Idea generation is cheap; novelty validation is hard.</em> Learned idea comparators that outperform GPT-5; literature similarity filtering integrated into end-to-end systems; AutoResearchBench; citation grounding and faithfulness; hypothesis validation in AI co-scientist.</p>
           </div>
           <div class="outline-card" data-num="04" data-aos="fade-up" data-aos-delay="200">
-            <div class="module-tag">Module 04 &middot; 35 min</div>
-            <h4>Coding, Experiments &amp; Tool Use</h4>
-            <p>Research coding as a distinct problem. SARE-style adaptation, Biomni-style unified action spaces (150+ tools, 59 databases), orchestration patterns (CodeAct, planner+executor, debate, evolve-and-select), and a <b>live walkthrough</b> of a minimal AI Scientist loop.</p>
+            <div class="module-tag">Module 04 &middot; 30 min</div>
+            <h4>Scientific Infrastructure &amp; Execution Environments</h4>
+            <p>Recent systems are best understood as <em>research operating systems</em>: persistent execution environments, sandboxing, experiment caching, artifact lineage, and provenance tracking. Biomni as canonical action space; SARE; MiroFlow. Includes a <b>live walkthrough</b> of a minimal AI Scientist loop.</p>
           </div>
           <div class="outline-card" data-num="05" data-aos="fade-up" data-aos-delay="250">
             <div class="module-tag">Module 05 &middot; 25 min</div>
-            <h4>Analysis, Writing &amp; Artifacts</h4>
-            <p>Turning raw experimental outputs into research artifacts: figure and report generation, hierarchical multi-stage paper writing for long-manuscript consistency, LM-critic self-review, and recurring failure modes (overclaiming, broken figure-text consistency).</p>
+            <h4>Embodied &amp; Real-World Scientific Interaction</h4>
+            <p>Scientific reasoning is not text reasoning. AI-XR co-scientists in the laboratory (LabOS); embodied scientific benchmarks (LabUtopia); agentic wet-lab automation (CRISPR-GPT, Biomni). The NLP problems that surface when language models talk to instruments, robots, and human collaborators.</p>
           </div>
           <div class="outline-card" data-num="06" data-aos="fade-up" data-aos-delay="300">
-            <div class="module-tag">Module 06 &middot; 25 min</div>
-            <h4>Evaluation &amp; Reliability</h4>
-            <p>Multi-dimensional evaluation: task success, reliability, reproducibility, citation faithfulness, novelty. ResearchGym, ResearchClawBench, Scientist-Bench, LAB-Bench, BMMR, LabUtopia, OSDA Agent &mdash; and the empirical <em>capability&ndash;reliability gap</em>.</p>
+            <div class="module-tag">Module 06 &middot; 30 min</div>
+            <h4>Reliability, Provenance &amp; Scientific Epistemics</h4>
+            <p>Not whether a system produces a research artifact, but whether the artifact is <em>epistemically reliable</em>. Provenance, falsification, calibrated uncertainty, reproducibility, hallucinated novelty, benchmark leakage. ResearchGym, ResearchClawBench, Scientist-Bench, AutoResearchBench, VeriTrace.</p>
           </div>
           <div class="outline-card" data-num="07" data-aos="fade-up" data-aos-delay="350">
-            <div class="module-tag">Module 07 &middot; 20 min</div>
-            <h4>Safety, Oversight &amp; Open Problems</h4>
-            <p>Hallucinated citations, overclaiming, authorship and attribution, unsafe tool execution in wet-lab settings. Human-in-the-loop research workflows (DeepScientist, LabOS), AI-XR co-scientists, and a curated list of open problems on which NLP can have immediate impact.</p>
+            <div class="module-tag">Module 07 &middot; 30 min</div>
+            <h4>Human-Governed AI Scientists</h4>
+            <p>Human governance is not a safety appendix but a core architectural concern. Four design patterns: branching workflows, checkpoint approval, interactive refinement, co-scientist loops. LabOS, DeepScientist, Rethinking the AI Scientist. Closes with Q&amp;A and open problems.</p>
           </div>
         </div>
 
         <div class="quote-banner" data-aos="fade-up">
-          <p>The question moves beyond whether an agent can answer a research question. It becomes whether an agent can run the research itself &mdash; ground in prior work, plan, code, experiment, analyze, write, and revise &mdash; and how we should evaluate the result.</p>
-          <div class="quote-attr">End-to-End Research Workflow</div>
+          <p>AI Scientists are evolving from autonomous workflow agents into persistent scientific systems that maintain long-horizon research state, verify novelty, track provenance, execute in real or simulated laboratories, and collaborate with human scientists across iterative discovery loops.</p>
+          <div class="quote-attr">Persistent Scientific Systems</div>
         </div>
       </div>
     </section>
@@ -164,17 +165,17 @@
           <div class="takeaway-item" data-aos="fade-up" data-aos-delay="50">
             <div class="takeaway-num">Item &middot; 01</div>
             <h5>A Compact Field Map</h5>
-            <p>The full AI Scientist landscape organized around the end-to-end research workflow, not scattered across NLP, ML, and domain-specific venues.</p>
+            <p>The AI Scientist landscape organized around six concerns &mdash; persistence, novelty verification, infrastructure, embodiment, reliability, and human governance &mdash; rather than scattered across venues.</p>
           </div>
           <div class="takeaway-item" data-aos="fade-up" data-aos-delay="100">
             <div class="takeaway-num">Item &middot; 02</div>
             <h5>A Reusable Vocabulary</h5>
-            <p>Autonomy level, loop closure, artifact scope, and capability&ndash;reliability gap as a diagnostic language across systems and benchmarks.</p>
+            <p>A diagnostic language that separates <em>agent architecture</em> from <em>scientific infrastructure</em>: research state, hypothesis lineage, novelty verification, provenance, capability&ndash;reliability gap.</p>
           </div>
           <div class="takeaway-item" data-aos="fade-up" data-aos-delay="150">
             <div class="takeaway-num">Item &middot; 03</div>
             <h5>A Curated Reading List</h5>
-            <p>Organized by workflow stage, marked with suggested pre-readings, spanning end-to-end systems, coding agents, ideation, evaluation, and domain-specific AI Scientists.</p>
+            <p>Organized by tutorial concern, marked with suggested pre-readings, spanning persistent systems, novelty verification, scientific infrastructure, embodied agents, reliability, and governance.</p>
           </div>
           <div class="takeaway-item" data-aos="fade-up" data-aos-delay="200">
             <div class="takeaway-num">Item &middot; 04</div>
@@ -215,22 +216,22 @@
               <tr class="welcome-row">
                 <td>15 min</td>
                 <td>Welcome</td>
-                <td>Motivating successes and failures; tutorial roadmap.</td>
+                <td>Motivating cases; tutorial roadmap.</td>
+              </tr>
+              <tr>
+                <td>25 min</td>
+                <td>Persistent Systems</td>
+                <td>Hypothesis lineage; experiment graphs; scientific memory; DeepScientist, Lumilab.</td>
+              </tr>
+              <tr>
+                <td>25 min</td>
+                <td>Novelty Verification</td>
+                <td>Learned comparators; literature similarity filtering; AutoResearchBench.</td>
               </tr>
               <tr>
                 <td>30 min</td>
-                <td>Foundations</td>
-                <td>End-to-end research loop; autonomy levels; design axes.</td>
-              </tr>
-              <tr>
-                <td>30 min</td>
-                <td>Idea &amp; Grounding</td>
-                <td>Chain-of-Ideas; co-scientist tournaments; idea ranking; citation faithfulness.</td>
-              </tr>
-              <tr>
-                <td>35 min</td>
-                <td>Coding &amp; Experiments</td>
-                <td>SARE; Biomni action space; orchestration; live walkthrough.</td>
+                <td>Scientific Infrastructure</td>
+                <td>Research operating systems; provenance; Biomni; SARE; live walkthrough.</td>
               </tr>
               <tr class="break-row">
                 <td>30 min</td>
@@ -239,18 +240,18 @@
               </tr>
               <tr>
                 <td>25 min</td>
-                <td>Analysis &amp; Writing</td>
-                <td>Hierarchical paper generation; figures; faithfulness.</td>
+                <td>Embodied Science</td>
+                <td>LabOS, LabUtopia, CRISPR-GPT; wet-lab and XR co-scientists.</td>
               </tr>
               <tr>
-                <td>25 min</td>
-                <td>Evaluation</td>
-                <td>ResearchGym, ResearchClawBench, Scientist-Bench, LAB-Bench, BMMR, LabUtopia.</td>
+                <td>30 min</td>
+                <td>Reliability &amp; Provenance</td>
+                <td>Epistemic reliability; ResearchGym, VeriTrace; capability&ndash;reliability gap.</td>
               </tr>
               <tr>
-                <td>20 min</td>
-                <td>Safety &amp; Open</td>
-                <td>Hallucinated citations; authorship; wet-lab safety; human-AI loop; Q&amp;A.</td>
+                <td>30 min</td>
+                <td>Human Governance</td>
+                <td>Branching, checkpoint approval, interactive refinement, co-scientist loops; Q&amp;A.</td>
               </tr>
               <tr class="total-row">
                 <td>180 min</td>
@@ -332,21 +333,21 @@
           </div>
 
           <article class="reading-module" data-aos="fade-up">
-            <h3><span class="module-number">1.</span><span>Foundations &amp; Landscape</span></h3>
+            <h3><span class="module-number">1.</span><span>Field Maps and Surveys</span></h3>
             <p class="module-intro">
-              Surveys and landscape papers that define the AI Scientist space, and the work that popularized the term "auto research." Read these first to anchor the rest of the tutorial.
+              Recent surveys that situate AI Scientists in the broader landscape of agentic AI for science. Read these first to anchor the rest of the tutorial.
             </p>
 
             <div class="papers-group pre">
               <h4 class="group-label">Pre-reading</h4>
               <ul class="paper-list">
                 <li class="paper">
-                  <span class="paper-title">A Survey of AI Scientists.<a class="paper-link" href="https://arxiv.org/abs/2510.23045" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">arXiv:2510.23045 (v4)</span>
+                  <span class="paper-title">AutoResearch AI: Towards AI-Powered Research Automation for Scientific Discovery.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Survey covering provenance, validation, accountability, and workflow-level automation</span>
                 </li>
                 <li class="paper">
-                  <span class="paper-title">autoresearch &mdash; an automated research loop for overnight ML experiments.<a class="paper-link" href="https://github.com/karpathy/autoresearch" target="_blank" rel="noopener">Code</a></span>
-                  <span class="paper-authors">Andrej Karpathy</span>
+                  <span class="paper-title">A Survey of AI Scientists.<a class="paper-link" href="https://arxiv.org/abs/2510.23045" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">arXiv:2510.23045 (v4)</span>
                 </li>
               </ul>
             </div>
@@ -356,11 +357,7 @@
               <ul class="paper-list">
                 <li class="paper">
                   <span class="paper-title">Agentic AI for Scientific Discovery: A Survey of Progress, Challenges, and Future Directions.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Survey of agentic AI for science across chemistry, materials, biology, and physics</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">Autonomous Agents for Scientific Discovery: Orchestrating Scientists, Language, Code, and Physics.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Orchestration of language, code, and physics in autonomous discovery</span>
+                  <span class="paper-authors">Survey across chemistry, materials, biology, and physics</span>
                 </li>
                 <li class="paper">
                   <span class="paper-title">The Rise and Potential of Large Language Model Based Agents: A Survey.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
@@ -371,9 +368,87 @@
           </article>
 
           <article class="reading-module" data-aos="fade-up">
-            <h3><span class="module-number">2.</span><span>End-to-End AI Scientist Systems</span></h3>
+            <h3><span class="module-number">2.</span><span>Scientific Research as a Persistent System</span></h3>
             <p class="module-intro">
-              Representative end-to-end systems that span ideation, coding, experimentation, and writing &mdash; in NLP/ML, biomedicine, chemistry, materials, and astronomy.
+              An AI Scientist is not a one-shot pipeline. These papers treat scientific research as long-horizon state evolution with hypothesis lineage, experiment graphs, scientific memory, and research branching.
+            </p>
+
+            <div class="papers-group pre">
+              <h4 class="group-label">Pre-reading</h4>
+              <ul class="paper-list">
+                <li class="paper">
+                  <span class="paper-title">Rethinking the AI Scientist: Interactive Multi-Agent Workflows for Scientific Discovery.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Persistent world state, interactive investigation, human checkpoints</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">DeepScientist &mdash; Local-First Persistent Research Workflows.<a class="paper-link" href="https://github.com/ResearAI/DeepScientist" target="_blank" rel="noopener">Repo</a></span>
+                  <span class="paper-authors">ResearAI &mdash; branching, preserved failed paths, human takeover</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="papers-group">
+              <h4 class="group-label">Additional reading</h4>
+              <ul class="paper-list">
+                <li class="paper">
+                  <span class="paper-title">Lumilab: AI-Native Scientific Lab Infrastructure.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Experiment environment and long-term scientific state management</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">autoresearch &mdash; an automated research loop for overnight ML experiments.<a class="paper-link" href="https://github.com/karpathy/autoresearch" target="_blank" rel="noopener">Code</a></span>
+                  <span class="paper-authors">Andrej Karpathy</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">AI-Researcher: Autonomous Scientific Innovation (with Scientist-Bench).<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">HKU Data Science Lab</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="reading-module" data-aos="fade-up">
+            <h3><span class="module-number">3.</span><span>Literature Discovery &amp; Novelty Verification</span></h3>
+            <p class="module-intro">
+              Idea generation is cheap; novelty validation is hard. Recent work treats literature discovery and novelty verification as distinct technical problems.
+            </p>
+
+            <div class="papers-group pre">
+              <h4 class="group-label">Pre-reading</h4>
+              <ul class="paper-list">
+                <li class="paper">
+                  <span class="paper-title">AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Isolates scientific literature discovery as a core capability</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">Forecasting Research Success Through Learned Comparison of Scientific Ideas.<a class="paper-link" href="https://openreview.net/forum?id=IWl5gUF52g" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Kushal Tirumala, Chenglei Si, Bohan Zhang, et al.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="papers-group">
+              <h4 class="group-label">Additional reading</h4>
+              <ul class="paper-list">
+                <li class="paper">
+                  <span class="paper-title">Towards End-to-End Automation of AI Research.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Nature &mdash; automatic literature similarity filtering for novelty verification</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">WebThinker: Empowering Large Reasoning Models with Deep Research Capability.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Deep research with reasoning models</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">Towards an AI Co-Scientist.<a class="paper-link" href="https://arxiv.org/abs/2502.18864" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Juraj Gottweis, Wei-Hung Weng, et al. (Google DeepMind)</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="reading-module" data-aos="fade-up">
+            <h3><span class="module-number">4.</span><span>Scientific Infrastructure &amp; Execution Environments</span></h3>
+            <p class="module-intro">
+              Recent systems are best understood as research operating systems: persistent execution environments, sandboxing, experiment caching, artifact lineage, and provenance tracking.
             </p>
 
             <div class="papers-group pre">
@@ -384,51 +459,14 @@
                   <span class="paper-authors">Kexin Huang, Yuanhao Qu, Henry C. Cousins, William A. Johnson, Di Yin, Mihir Shah, Denny Zhou, Russ B. Altman, Mengdi Wang, Le Cong</span>
                 </li>
                 <li class="paper">
-                  <span class="paper-title">Towards an AI Co-Scientist.<a class="paper-link" href="https://arxiv.org/abs/2502.18864" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Juraj Gottweis, Wei-Hung Weng, Alexander Daryin, Tao Tu, Anil Palepu, Petar Sirkovic, et al. (Google DeepMind)</span>
+                  <span class="paper-title">Lumilab: AI-Native Scientific Lab Infrastructure.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Scientific operating systems and long-term state</span>
                 </li>
               </ul>
             </div>
 
             <div class="papers-group">
               <h4 class="group-label">Additional reading</h4>
-              <ul class="paper-list">
-                <li class="paper">
-                  <span class="paper-title">AI-Researcher: Autonomous Scientific Innovation (with Scientist-Bench).<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">HKU Data Science Lab</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">Kosmos: An AI Scientist for Autonomous Discovery.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">FutureHouse</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">SciMaster: X-Master as Foundation &mdash; Can We Lead on Humanity's Last Exam?<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">SciMaster Team</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">Tongyi DeepResearch: A New Era of Open-Source AI Researchers.<a class="paper-link" href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/" target="_blank" rel="noopener">Blog</a></span>
-                  <span class="paper-authors">Alibaba Tongyi Lab</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">CRISPR-GPT for Agentic Automation of Gene-Editing Experiments.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Yuanhao Qu, Kaixuan Huang, Ming Yin, Kanghong Zhan, Dyllan Liu, et al. &mdash; Nature Biomedical Engineering</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">OSDA Agent: De Novo Design of Organic Structure Directing Agents with LLMs.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Chemistry / materials AI Scientist</span>
-                </li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="reading-module" data-aos="fade-up">
-            <h3><span class="module-number">3.</span><span>Coding, Tool Use &amp; Orchestration</span></h3>
-            <p class="module-intro">
-              Research coding is a distinct problem from generic software engineering. These papers cover research coding agents, tool environments, and orchestration patterns (single-agent CodeAct, planner+executor, debate, evolve-and-select).
-            </p>
-
-            <div class="papers-group pre">
-              <h4 class="group-label">Pre-reading</h4>
               <ul class="paper-list">
                 <li class="paper">
                   <span class="paper-title">Self-Adapting Agents for Automating Research Coding Workflows (SARE).<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
@@ -438,106 +476,18 @@
                   <span class="paper-title">MiroFlow: A Consistent Agent Framework with Reproducible Performance.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
                   <span class="paper-authors">MiroFlow Team</span>
                 </li>
-              </ul>
-            </div>
-
-            <div class="papers-group">
-              <h4 class="group-label">Additional reading</h4>
-              <ul class="paper-list">
-                <li class="paper">
-                  <span class="paper-title">OAgents: An Empirical Study of Building Effective Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">OAgents Team</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">WebThinker: Empowering Large Reasoning Models with Deep Research Capability.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Deep research with reasoning models</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">Eigen-1: Adaptive Multi-Agent Refinement with Monitor-Based RAG for Scientific Reasoning.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Wanghan Xu et al.</span>
-                </li>
                 <li class="paper">
                   <span class="paper-title">SWE-bench: Can Language Models Resolve Real-World GitHub Issues?<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, Karthik Narasimhan</span>
+                  <span class="paper-authors">Carlos E. Jimenez, John Yang, Alexander Wettig, et al.</span>
                 </li>
               </ul>
             </div>
           </article>
 
           <article class="reading-module" data-aos="fade-up">
-            <h3><span class="module-number">4.</span><span>Ideation, Ranking &amp; Oversight</span></h3>
+            <h3><span class="module-number">5.</span><span>Embodied &amp; Real-World Scientific Interaction</span></h3>
             <p class="module-intro">
-              Idea generation is no longer the bottleneck. Recent work has shown that idea <em>evaluation</em> &mdash; ranking, novelty assessment, oversight &mdash; is becoming its own technical subproblem.
-            </p>
-
-            <div class="papers-group pre">
-              <h4 class="group-label">Pre-reading</h4>
-              <ul class="paper-list">
-                <li class="paper">
-                  <span class="paper-title">Forecasting Research Success Through Learned Comparison of Scientific Ideas.<a class="paper-link" href="https://openreview.net/forum?id=IWl5gUF52g" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Kushal Tirumala, Chenglei Si, Bohan Zhang, Bohan Wang, Mengjiao Yang, Kathleen M. Carley, Yejin Choi, Graham Neubig, Diyi Yang</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="papers-group">
-              <h4 class="group-label">Additional reading</h4>
-              <ul class="paper-list">
-                <li class="paper">
-                  <span class="paper-title">Chain-of-Ideas (from AI-Researcher): challenge &rarr; existing methods &rarr; motivation &rarr; proposed method &rarr; technical details &rarr; expected outcomes.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">HKU Data Science Lab</span>
-                </li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="reading-module" data-aos="fade-up">
-            <h3><span class="module-number">5.</span><span>Evaluation &amp; Reliability Benchmarks</span></h3>
-            <p class="module-intro">
-              Final-answer accuracy is not enough. These benchmarks measure end-to-end research capability, reliability, reproducibility, citation faithfulness, and novelty &mdash; in NLP/ML, biomedicine, chemistry, materials, and embodied scientific settings.
-            </p>
-
-            <div class="papers-group pre">
-              <h4 class="group-label">Pre-reading</h4>
-              <ul class="paper-list">
-                <li class="paper">
-                  <span class="paper-title">ResearchGym: Evaluating Language Model Agents on Real-World AI Research.<a class="paper-link" href="https://arxiv.org/abs/2602.15112" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Aniketh Garikaparthi, Manasi Patwardhan, Arman Cohan</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">ResearchClawBench: From Re-Discovery to New-Discovery.<a class="paper-link" href="https://github.com/InternScience/ResearchClawBench" target="_blank" rel="noopener">Repo</a></span>
-                  <span class="paper-authors">InternScience</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="papers-group">
-              <h4 class="group-label">Additional reading</h4>
-              <ul class="paper-list">
-                <li class="paper">
-                  <span class="paper-title">Scientist-Bench (from AI-Researcher).<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">HKU Data Science Lab</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">LAB-Bench (DbQA, SeqQA) and HLE-Biomedical, as used by Biomni.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Biomedical reasoning and database querying benchmarks</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning Dataset.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Multimodal multi-discipline reasoning</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents.<a class="paper-link" href="https://arxiv.org/abs/2505.22634" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Rui Li, Zixuan Hu, Wenxi Qu, Jinouwen Zhang, Zhenfei Yin, Sha Zhang, et al.</span>
-                </li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="reading-module" data-aos="fade-up">
-            <h3><span class="module-number">6.</span><span>Safety, Oversight &amp; Human-in-the-Loop</span></h3>
-            <p class="module-intro">
-              The unique risk profile of AI Scientists: hallucinated citations, overclaiming, authorship and attribution, and unsafe tool execution in wet-lab settings. Plus design patterns for human-in-the-loop research workflows.
+              Scientific reasoning is not text reasoning. These papers cover wet-lab procedures, scientific instruments, robotic manipulators, and XR interfaces with human collaborators.
             </p>
 
             <div class="papers-group pre">
@@ -548,8 +498,8 @@
                   <span class="paper-authors">Le Cong, David Smerkous, Xiaotong Wang, Di Yin, Zaixi Zhang, et al.</span>
                 </li>
                 <li class="paper">
-                  <span class="paper-title">DeepScientist &mdash; Local-First Persistent Research Workflows.<a class="paper-link" href="https://github.com/ResearAI/DeepScientist" target="_blank" rel="noopener">Repo</a></span>
-                  <span class="paper-authors">ResearAI</span>
+                  <span class="paper-title">LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents.<a class="paper-link" href="https://arxiv.org/abs/2505.22634" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Rui Li, Zixuan Hu, Wenxi Qu, Jinouwen Zhang, Zhenfei Yin, Sha Zhang, et al.</span>
                 </li>
               </ul>
             </div>
@@ -558,12 +508,86 @@
               <h4 class="group-label">Additional reading</h4>
               <ul class="paper-list">
                 <li class="paper">
+                  <span class="paper-title">CRISPR-GPT for Agentic Automation of Gene-Editing Experiments.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Yuanhao Qu, Kaixuan Huang, Ming Yin, Kanghong Zhan, Dyllan Liu, et al. &mdash; Nature Biomedical Engineering</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="reading-module" data-aos="fade-up">
+            <h3><span class="module-number">6.</span><span>Reliability, Provenance &amp; Scientific Epistemics</span></h3>
+            <p class="module-intro">
+              Not whether a system can produce a research artifact, but whether the artifact is epistemically reliable: provenance, falsification, calibrated uncertainty, reproducibility, hallucinated novelty, benchmark leakage.
+            </p>
+
+            <div class="papers-group pre">
+              <h4 class="group-label">Pre-reading</h4>
+              <ul class="paper-list">
+                <li class="paper">
+                  <span class="paper-title">ResearchGym: Evaluating Language Model Agents on Real-World AI Research.<a class="paper-link" href="https://arxiv.org/abs/2602.15112" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Aniketh Garikaparthi, Manasi Patwardhan, Arman Cohan</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">VeriTrace: Provenance Evaluation for AI Scientist Systems.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Provenance evaluation as a core capability</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="papers-group">
+              <h4 class="group-label">Additional reading</h4>
+              <ul class="paper-list">
+                <li class="paper">
+                  <span class="paper-title">ResearchClawBench: From Re-Discovery to New-Discovery.<a class="paper-link" href="https://github.com/InternScience/ResearchClawBench" target="_blank" rel="noopener">Repo</a></span>
+                  <span class="paper-authors">InternScience</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning Dataset.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Multimodal multi-discipline reasoning</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Literature discovery benchmark</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="reading-module" data-aos="fade-up">
+            <h3><span class="module-number">7.</span><span>Human-Governed AI Scientists</span></h3>
+            <p class="module-intro">
+              Human governance is not a safety appendix but a core architectural concern. Branching workflows, checkpoint approval, interactive refinement, and co-scientist loops define the next generation of AI Scientists.
+            </p>
+
+            <div class="papers-group pre">
+              <h4 class="group-label">Pre-reading</h4>
+              <ul class="paper-list">
+                <li class="paper">
+                  <span class="paper-title">Rethinking the AI Scientist: Interactive Multi-Agent Workflows for Scientific Discovery.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Persistent world state, interactive investigation, human checkpoints</span>
+                </li>
+                <li class="paper">
+                  <span class="paper-title">LabOS: The AI-XR Co-Scientist That Sees and Works With Humans.<a class="paper-link" href="https://arxiv.org/abs/2510.14861" target="_blank" rel="noopener">Paper</a></span>
+                  <span class="paper-authors">Le Cong et al.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="papers-group">
+              <h4 class="group-label">Additional reading</h4>
+              <ul class="paper-list">
+                <li class="paper">
+                  <span class="paper-title">DeepScientist &mdash; branching, failed paths, human takeover.<a class="paper-link" href="https://github.com/ResearAI/DeepScientist" target="_blank" rel="noopener">Repo</a></span>
+                  <span class="paper-authors">ResearAI</span>
+                </li>
+                <li class="paper">
                   <span class="paper-title">SafeToolBench: A Benchmark for Pre-Execution Tool-Safety in Language Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
                   <span class="paper-authors">Tian Xia et al.</span>
                 </li>
                 <li class="paper">
                   <span class="paper-title">OASIS: Open Agents Social Interaction Simulations on One Million Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Ziyi Yang, Zaibin Zhang, Zirui Zheng, Yuxian Jiang, Ziyue Gan, Zhiyu Wang, Zhenfei Yin</span>
+                  <span class="paper-authors">Ziyi Yang, Zaibin Zhang, et al.</span>
                 </li>
               </ul>
             </div>
@@ -626,7 +650,7 @@
             <div class="materials-card" data-aos="fade-up" data-aos-delay="50">
               <span class="materials-kicker">Slides &middot; Notebook</span>
               <h4>Classroom-ready, seven blocks.</h4>
-              <p>Designed for graduate seminars covering foundations of the research loop, idea generation, coding and experimentation, analysis and writing, evaluation, and safety. The companion notebook implements a minimal AI Scientist loop (read paper &rarr; hypothesis &rarr; experiment &rarr; report) you can run end-to-end.</p>
+              <p>Designed for graduate seminars covering persistent systems, literature discovery and novelty verification, scientific infrastructure, embodied science, reliability and provenance, and human governance. The companion notebook implements a minimal AI Scientist loop (read paper &rarr; hypothesis &rarr; experiment &rarr; report) you can run end-to-end.</p>
               <a class="btn-ghost" href="#">Slides &middot; Coming Soon</a>
               <a class="btn-ghost" href="#">Demo Notebook &middot; Coming Soon</a>
             </div>
@@ -648,7 +672,7 @@
 
   <footer id="footer">
     <div class="container">
-      <div class="copyright">EMNLP 2026 &middot; AI Scientist &middot; Language Model Agents for End-to-End Research Workflows</div>
+      <div class="copyright">EMNLP 2026 &middot; AI Scientist &middot; Persistent Scientific Systems with Memory, Verification, and Human Governance</div>
       <div class="credits">
         Contact: <a href="mailto:xu_wanghan@sjtu.edu.cn">xu_wanghan@sjtu.edu.cn</a>
       </div>
