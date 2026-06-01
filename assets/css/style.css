@@ -737,7 +737,7 @@ h6 {
   color: #fff;
   font-size: 15px;
   margin-bottom: 10px;
-  font-style: italic;
+  font-style: normal;
 }
 
 #organizers .speaker .details .social {
@@ -840,7 +840,7 @@ h6 {
   color: #fff;
   font-size: 15px;
   margin-bottom: 10px;
-  font-style: italic;
+  font-style: normal;
 }
 
 #speakers .speaker .details .social {
@@ -964,7 +964,7 @@ h6 {
 #schedule .sub-heading {
   text-align: center;
   font-size: 18px;
-  font-style: italic;
+  font-style: normal;
   margin: 0 auto 30px auto;
 }
 
@@ -1017,14 +1017,14 @@ h6 {
 }
 
 #schedule .schedule-item h4 span {
-  font-style: italic;
+  font-style: normal;
   color: #19328e;
   font-weight: normal;
   font-size: 16px;
 }
 
 #schedule .schedule-item p {
-  font-style: italic;
+  font-style: normal;
   color: #152b79;
   margin-bottom: 0;
 }
@@ -1153,7 +1153,7 @@ h6 {
   padding: 0 20px;
   margin-bottom: 20px;
   color: #060c22;
-  font-style: italic;
+  font-style: normal;
   font-size: 15px;
 }
 

@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,200;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,8 +33,6 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#outline">Outline</a></li>
-          <li><a class="nav-link scrollto" href="#takeaways">Takeaways</a></li>
-          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
           <li><a class="nav-link scrollto" href="#audience">Audience</a></li>
           <li><a class="nav-link scrollto" href="#reading">Reading</a></li>
           <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
@@ -61,11 +59,6 @@
         scientific infrastructure, embodied experimentation, epistemic reliability,
         and <em>human governance</em>.
       </h2>
-      <div class="hero-meta">
-        <span>Biomni &middot; AI co-scientist &middot; Kosmos &middot; LabOS &middot; DeepScientist &middot; Lumilab</span>
-        <span>AutoResearchBench &middot; ResearchGym &middot; Scientist-Bench &middot; VeriTrace</span>
-        <span>Reading List &middot; Slides &middot; Live Walkthrough</span>
-      </div>
     </div>
     <a href="#about" class="hero-scroll scrollto">Scroll to begin</a>
   </section>
@@ -97,6 +90,10 @@
             </p>
           </div>
         </div>
+        <p class="about-takeaways">
+          <span class="about-takeaways-label">You leave with</span>
+          a compact field map of the six concerns, a reusable vocabulary that separates agent architecture from scientific infrastructure, a curated reading list, classroom-ready slides, and a minimal AI Scientist walkthrough notebook that reads a paper, generates a hypothesis, runs an experiment, and produces a report.
+        </p>
       </div>
     </section>
 
@@ -127,7 +124,7 @@
           <div class="outline-card" data-num="04" data-aos="fade-up" data-aos-delay="200">
             <div class="module-tag">Module 04 &middot; 30 min</div>
             <h4>Scientific Infrastructure &amp; Execution Environments</h4>
-            <p>Recent systems are best understood as <em>research operating systems</em>: persistent execution environments, sandboxing, experiment caching, artifact lineage, and provenance tracking. Biomni as canonical action space; SARE; MiroFlow. Includes a <b>live walkthrough</b> of a minimal AI Scientist loop.</p>
+            <p>Recent systems are best understood as <em>research operating systems</em>: persistent execution environments, sandboxing, experiment caching, artifact lineage, and provenance tracking. Biomni as canonical action space; SARE; MiroFlow. Closes with a <b>live walkthrough</b> in which attendees examine common failure modes (hallucinated novelty, broken provenance, and irreproducible results) in real execution traces.</p>
           </div>
           <div class="outline-card" data-num="05" data-aos="fade-up" data-aos-delay="250">
             <div class="module-tag">Module 05 &middot; 25 min</div>
@@ -153,126 +150,10 @@
       </div>
     </section>
 
-    <section id="takeaways">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>&sect; 03 &middot; Take-home</h2>
-          <span class="display-title">A compact <em>field map</em> and a reusable vocabulary.</span>
-          <p>Six artifacts you leave with &mdash; beyond a set of slides.</p>
-        </div>
-
-        <div class="takeaway-grid">
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="50">
-            <div class="takeaway-num">Item &middot; 01</div>
-            <h5>A Compact Field Map</h5>
-            <p>The AI Scientist landscape organized around six concerns &mdash; persistence, novelty verification, infrastructure, embodiment, reliability, and human governance &mdash; rather than scattered across venues.</p>
-          </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="takeaway-num">Item &middot; 02</div>
-            <h5>A Reusable Vocabulary</h5>
-            <p>A diagnostic language that separates <em>agent architecture</em> from <em>scientific infrastructure</em>: research state, hypothesis lineage, novelty verification, provenance, capability&ndash;reliability gap.</p>
-          </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="150">
-            <div class="takeaway-num">Item &middot; 03</div>
-            <h5>A Curated Reading List</h5>
-            <p>Organized by tutorial concern, marked with suggested pre-readings, spanning persistent systems, novelty verification, scientific infrastructure, embodied agents, reliability, and governance.</p>
-          </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="takeaway-num">Item &middot; 04</div>
-            <h5>A Live Walkthrough</h5>
-            <p>A minimal AI Scientist loop that you can follow in real time: read a paper, generate a hypothesis, write and run an experiment, produce a short report. Bring your laptop.</p>
-          </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="250">
-            <div class="takeaway-num">Item &middot; 05</div>
-            <h5>Classroom-ready Slides</h5>
-            <p>Released openly through this site and the ACL Anthology, designed for graduate seminars and discussion sessions on AI Scientist and scientific NLP.</p>
-          </div>
-          <div class="takeaway-item" data-aos="fade-up" data-aos-delay="300">
-            <div class="takeaway-num">Item &middot; 06</div>
-            <h5>A Demo Notebook</h5>
-            <p>A small, runnable companion that grounds the design axes in actual agent code, traces, and failure modes &mdash; usable as a starting point for your own AI Scientist.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="schedule">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>&sect; 04 &middot; Schedule</h2>
-          <span class="display-title">A three-hour <em>tutorial</em> in a 3.5-hour slot.</span>
-          <p>Including coffee break &middot; timings indicative &middot; structured around the seven blocks.</p>
-        </div>
-        <div class="table-responsive">
-          <table class="schedule-table table align-middle">
-            <thead>
-              <tr>
-                <th>Duration</th>
-                <th>Block</th>
-                <th>Focus</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="welcome-row">
-                <td>15 min</td>
-                <td>Welcome</td>
-                <td>Motivating cases; tutorial roadmap.</td>
-              </tr>
-              <tr>
-                <td>25 min</td>
-                <td>Persistent Systems</td>
-                <td>Hypothesis lineage; experiment graphs; scientific memory; DeepScientist, Lumilab.</td>
-              </tr>
-              <tr>
-                <td>25 min</td>
-                <td>Novelty Verification</td>
-                <td>Learned comparators; literature similarity filtering; AutoResearchBench.</td>
-              </tr>
-              <tr>
-                <td>30 min</td>
-                <td>Scientific Infrastructure</td>
-                <td>Research operating systems; provenance; Biomni; SARE; live walkthrough.</td>
-              </tr>
-              <tr class="break-row">
-                <td>30 min</td>
-                <td>Coffee Break</td>
-                <td>Not counted toward tutorial content.</td>
-              </tr>
-              <tr>
-                <td>25 min</td>
-                <td>Embodied Science</td>
-                <td>LabOS, LabUtopia, CRISPR-GPT; wet-lab and XR co-scientists.</td>
-              </tr>
-              <tr>
-                <td>30 min</td>
-                <td>Reliability &amp; Provenance</td>
-                <td>Epistemic reliability; ResearchGym, VeriTrace; capability&ndash;reliability gap.</td>
-              </tr>
-              <tr>
-                <td>30 min</td>
-                <td>Human Governance</td>
-                <td>Branching, checkpoint approval, interactive refinement, co-scientist loops; Q&amp;A.</td>
-              </tr>
-              <tr class="total-row">
-                <td>180 min</td>
-                <td>Total Content</td>
-                <td>Three-hour tutorial content.</td>
-              </tr>
-              <tr class="total-row">
-                <td>210 min</td>
-                <td>Total Slot</td>
-                <td>Including coffee break.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
     <section id="audience">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>&sect; 05 &middot; Audience</h2>
+          <h2>&sect; 03 &middot; Audience</h2>
           <span class="display-title">Self-contained at the <em>conceptual</em> level.</span>
           <p>~200&ndash;300 expected attendees &middot; aligned with EMNLP 2026's "New Missions for NLP Research."</p>
         </div>
@@ -315,7 +196,7 @@
     <section id="reading">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>&sect; 06 &middot; Reading List</h2>
+          <h2>&sect; 04 &middot; Reading List</h2>
           <span class="display-title">A curated path through the <em>AI Scientist landscape</em>.</span>
           <p>Organized by tutorial workflow &mdash; pre-readings recommended before attending, additional readings for broader background. Links will be added as releases become public.</p>
         </div>
@@ -334,9 +215,6 @@
 
           <article class="reading-module" data-aos="fade-up">
             <h3><span class="module-number">1.</span><span>Field Maps and Surveys</span></h3>
-            <p class="module-intro">
-              Recent surveys that situate AI Scientists in the broader landscape of agentic AI for science. Read these first to anchor the rest of the tutorial.
-            </p>
 
             <div class="papers-group pre">
               <h4 class="group-label">Pre-reading</h4>
@@ -347,7 +225,7 @@
                 </li>
                 <li class="paper">
                   <span class="paper-title">A Survey of AI Scientists.<a class="paper-link" href="https://arxiv.org/abs/2510.23045" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">arXiv:2510.23045 (v4)</span>
+                  <span class="paper-authors">Guiyao Tie, Pan Zhou, Lichao Sun &mdash; arXiv:2510.23045</span>
                 </li>
               </ul>
             </div>
@@ -359,19 +237,12 @@
                   <span class="paper-title">Agentic AI for Scientific Discovery: A Survey of Progress, Challenges, and Future Directions.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
                   <span class="paper-authors">Survey across chemistry, materials, biology, and physics</span>
                 </li>
-                <li class="paper">
-                  <span class="paper-title">The Rise and Potential of Large Language Model Based Agents: A Survey.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Zhiheng Xi et al.</span>
-                </li>
               </ul>
             </div>
           </article>
 
           <article class="reading-module" data-aos="fade-up">
             <h3><span class="module-number">2.</span><span>Scientific Research as a Persistent System</span></h3>
-            <p class="module-intro">
-              An AI Scientist is not a one-shot pipeline. These papers treat scientific research as long-horizon state evolution with hypothesis lineage, experiment graphs, scientific memory, and research branching.
-            </p>
 
             <div class="papers-group pre">
               <h4 class="group-label">Pre-reading</h4>
@@ -391,16 +262,8 @@
               <h4 class="group-label">Additional reading</h4>
               <ul class="paper-list">
                 <li class="paper">
-                  <span class="paper-title">Lumilab: AI-Native Scientific Lab Infrastructure.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Experiment environment and long-term scientific state management</span>
-                </li>
-                <li class="paper">
                   <span class="paper-title">autoresearch &mdash; an automated research loop for overnight ML experiments.<a class="paper-link" href="https://github.com/karpathy/autoresearch" target="_blank" rel="noopener">Code</a></span>
-                  <span class="paper-authors">Andrej Karpathy</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">AI-Researcher: Autonomous Scientific Innovation (with Scientist-Bench).<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">HKU Data Science Lab</span>
+                  <span class="paper-authors">Andrej Karpathy &mdash; the one-shot pipeline baseline we contrast against</span>
                 </li>
               </ul>
             </div>
@@ -408,9 +271,6 @@
 
           <article class="reading-module" data-aos="fade-up">
             <h3><span class="module-number">3.</span><span>Literature Discovery &amp; Novelty Verification</span></h3>
-            <p class="module-intro">
-              Idea generation is cheap; novelty validation is hard. Recent work treats literature discovery and novelty verification as distinct technical problems.
-            </p>
 
             <div class="papers-group pre">
               <h4 class="group-label">Pre-reading</h4>
@@ -421,7 +281,7 @@
                 </li>
                 <li class="paper">
                   <span class="paper-title">Forecasting Research Success Through Learned Comparison of Scientific Ideas.<a class="paper-link" href="https://openreview.net/forum?id=IWl5gUF52g" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Kushal Tirumala, Chenglei Si, Bohan Zhang, et al.</span>
+                  <span class="paper-authors">Srujan P. Mule, Aniketh Garikaparthi, Manasi Patwardhan</span>
                 </li>
               </ul>
             </div>
@@ -429,14 +289,6 @@
             <div class="papers-group">
               <h4 class="group-label">Additional reading</h4>
               <ul class="paper-list">
-                <li class="paper">
-                  <span class="paper-title">Towards End-to-End Automation of AI Research.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Nature &mdash; automatic literature similarity filtering for novelty verification</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">WebThinker: Empowering Large Reasoning Models with Deep Research Capability.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Deep research with reasoning models</span>
-                </li>
                 <li class="paper">
                   <span class="paper-title">Towards an AI Co-Scientist.<a class="paper-link" href="https://arxiv.org/abs/2502.18864" target="_blank" rel="noopener">Paper</a></span>
                   <span class="paper-authors">Juraj Gottweis, Wei-Hung Weng, et al. (Google DeepMind)</span>
@@ -447,16 +299,13 @@
 
           <article class="reading-module" data-aos="fade-up">
             <h3><span class="module-number">4.</span><span>Scientific Infrastructure &amp; Execution Environments</span></h3>
-            <p class="module-intro">
-              Recent systems are best understood as research operating systems: persistent execution environments, sandboxing, experiment caching, artifact lineage, and provenance tracking.
-            </p>
 
             <div class="papers-group pre">
               <h4 class="group-label">Pre-reading</h4>
               <ul class="paper-list">
                 <li class="paper">
                   <span class="paper-title">Biomni: A General-Purpose Biomedical AI Agent.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Kexin Huang, Yuanhao Qu, Henry C. Cousins, William A. Johnson, Di Yin, Mihir Shah, Denny Zhou, Russ B. Altman, Mengdi Wang, Le Cong</span>
+                  <span class="paper-authors">Kexin Huang, Serena Zhang, Hanchen Wang, Yuanhao Qu, Yingzhou Lu, Yusuf Roohani, et al.</span>
                 </li>
                 <li class="paper">
                   <span class="paper-title">Lumilab: AI-Native Scientific Lab Infrastructure.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
@@ -472,23 +321,12 @@
                   <span class="paper-title">Self-Adapting Agents for Automating Research Coding Workflows (SARE).<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
                   <span class="paper-authors">Balaji Dinesh Gangireddi, Aniketh Garikaparthi, Manasi Patwardhan, Arman Cohan &mdash; ICLR 2026 RSI</span>
                 </li>
-                <li class="paper">
-                  <span class="paper-title">MiroFlow: A Consistent Agent Framework with Reproducible Performance.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">MiroFlow Team</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">SWE-bench: Can Language Models Resolve Real-World GitHub Issues?<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Carlos E. Jimenez, John Yang, Alexander Wettig, et al.</span>
-                </li>
               </ul>
             </div>
           </article>
 
           <article class="reading-module" data-aos="fade-up">
             <h3><span class="module-number">5.</span><span>Embodied &amp; Real-World Scientific Interaction</span></h3>
-            <p class="module-intro">
-              Scientific reasoning is not text reasoning. These papers cover wet-lab procedures, scientific instruments, robotic manipulators, and XR interfaces with human collaborators.
-            </p>
 
             <div class="papers-group pre">
               <h4 class="group-label">Pre-reading</h4>
@@ -517,9 +355,6 @@
 
           <article class="reading-module" data-aos="fade-up">
             <h3><span class="module-number">6.</span><span>Reliability, Provenance &amp; Scientific Epistemics</span></h3>
-            <p class="module-intro">
-              Not whether a system can produce a research artifact, but whether the artifact is epistemically reliable: provenance, falsification, calibrated uncertainty, reproducibility, hallucinated novelty, benchmark leakage.
-            </p>
 
             <div class="papers-group pre">
               <h4 class="group-label">Pre-reading</h4>
@@ -542,23 +377,12 @@
                   <span class="paper-title">ResearchClawBench: From Re-Discovery to New-Discovery.<a class="paper-link" href="https://github.com/InternScience/ResearchClawBench" target="_blank" rel="noopener">Repo</a></span>
                   <span class="paper-authors">InternScience</span>
                 </li>
-                <li class="paper">
-                  <span class="paper-title">BMMR: A Large-Scale Bilingual Multimodal Multi-Discipline Reasoning Dataset.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Multimodal multi-discipline reasoning</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Literature discovery benchmark</span>
-                </li>
               </ul>
             </div>
           </article>
 
           <article class="reading-module" data-aos="fade-up">
             <h3><span class="module-number">7.</span><span>Human-Governed AI Scientists</span></h3>
-            <p class="module-intro">
-              Human governance is not a safety appendix but a core architectural concern. Branching workflows, checkpoint approval, interactive refinement, and co-scientist loops define the next generation of AI Scientists.
-            </p>
 
             <div class="papers-group pre">
               <h4 class="group-label">Pre-reading</h4>
@@ -581,14 +405,6 @@
                   <span class="paper-title">DeepScientist &mdash; branching, failed paths, human takeover.<a class="paper-link" href="https://github.com/ResearAI/DeepScientist" target="_blank" rel="noopener">Repo</a></span>
                   <span class="paper-authors">ResearAI</span>
                 </li>
-                <li class="paper">
-                  <span class="paper-title">SafeToolBench: A Benchmark for Pre-Execution Tool-Safety in Language Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Tian Xia et al.</span>
-                </li>
-                <li class="paper">
-                  <span class="paper-title">OASIS: Open Agents Social Interaction Simulations on One Million Agents.<a class="paper-link" href="#" target="_blank" rel="noopener">Paper</a></span>
-                  <span class="paper-authors">Ziyi Yang, Zaibin Zhang, et al.</span>
-                </li>
               </ul>
             </div>
           </article>
@@ -599,11 +415,12 @@
     <section id="organizers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>&sect; 07 &middot; Organizers</h2>
+          <h2>&sect; 05 &middot; Organizers</h2>
           <span class="display-title">Built by a team spanning <em>SJTU</em>, <em>UGA</em>, <em>Stanford</em>, and <em>Oxford</em>.</span>
-          <p>Junior researchers and a senior advisor &middot; agents, multi-agent systems, AI Scientists, and computer vision.</p>
+          <p>Four presenters and a senior advisor &middot; agents, multi-agent systems, AI Scientists, and computer vision.</p>
         </div>
 
+        <p class="mono" style="text-align:center;color:var(--accent);margin:0 0 24px;">Presenters</p>
         <div class="row justify-content-center">
           <div class="col-lg col-md-4 col-sm-6 col-12">
             <div class="speaker" data-aos="fade-up" data-aos-delay="50">
@@ -633,8 +450,12 @@
               <p class="org-affil">Stanford University</p>
             </div>
           </div>
-          <div class="col-lg col-md-4 col-sm-6 col-12">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="250">
+        </div>
+
+        <p class="mono" style="text-align:center;color:var(--accent);margin:40px 0 24px;">Advisory Board</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="50">
               <img src="assets/img/organizers/profile_philip.jpg" alt="Philip Torr" class="img-fluid">
               <br><a href="https://eng.ox.ac.uk/people/philip-torr" target="_blank">Philip Torr</a><br>
               <p class="org-affil">University of Oxford</p>
@@ -647,28 +468,20 @@
     <section id="materials">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>&sect; 08 &middot; Materials</h2>
+          <h2>&sect; 06 &middot; Materials</h2>
           <span class="display-title">Released openly through this site and the <em>ACL Anthology</em>.</span>
           <p>Classroom-ready slides, a curated reading list, and a minimal AI Scientist walkthrough notebook.</p>
         </div>
 
-        <div class="row g-4">
-          <div class="col-lg-6">
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-9">
             <div class="materials-card" data-aos="fade-up" data-aos-delay="50">
-              <span class="materials-kicker">Slides &middot; Notebook</span>
-              <h4>Classroom-ready, seven blocks.</h4>
-              <p>Designed for graduate seminars covering persistent systems, literature discovery and novelty verification, scientific infrastructure, embodied science, reliability and provenance, and human governance. The companion notebook implements a minimal AI Scientist loop (read paper &rarr; hypothesis &rarr; experiment &rarr; report) you can run end-to-end.</p>
+              <span class="materials-kicker">Slides &middot; Notebook &middot; Reading List</span>
+              <h4>Classroom-ready, openly released.</h4>
+              <p>Slides for the seven blocks, a companion notebook implementing a minimal AI Scientist loop that reads a paper, generates a hypothesis, runs an experiment, and produces a report, and the curated reading list &mdash; all released at least two months before the tutorial, through this site and the ACL Anthology.</p>
               <a class="btn-ghost" href="#">Slides &middot; Coming Soon</a>
               <a class="btn-ghost" href="#">Demo Notebook &middot; Coming Soon</a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="materials-card" data-aos="fade-up" data-aos-delay="100">
-              <span class="materials-kicker">Anthology &middot; Open access</span>
-              <h4>Hosted here &amp; on the ACL Anthology.</h4>
-              <p>All materials &mdash; slides, notebook, the curated reading list, and an open-problems discussion section &mdash; will be released openly through this site and the ACL Anthology, following conference policy.</p>
               <a class="btn-ghost" href="#reading">Browse the Reading List</a>
-              <a class="btn-ghost" href="#">Open Problems &middot; Coming Soon</a>
             </div>
           </div>
         </div>

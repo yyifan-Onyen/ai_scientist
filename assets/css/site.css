@@ -14,16 +14,16 @@
   --ink-soft: #4a5269;
   --rule: #e3e7f7;
   --rule-soft: #ecedf5;
-  --serif: "Fraunces", "Source Serif Pro", Georgia, serif;
-  --sans: "Inter", "Open Sans", system-ui, sans-serif;
-  --display: "Raleway", "Inter", sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --serif: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --sans: "IBM Plex Sans", "Inter", system-ui, sans-serif;
+  --display: "Source Serif 4", "Source Serif Pro", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
 /* ---------- Type system ---------- */
 body {
   font-family: var(--sans);
-  font-feature-settings: "ss01", "cv11", "case";
+  font-feature-settings: "kern" 1, "liga" 1;
   color: var(--ink);
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
   font-size: 11.5px;
 }
 
-.serif-quote { font-family: var(--serif); font-style: italic; font-weight: 300; }
+.serif-quote { font-family: var(--serif); font-style: normal; font-weight: 300; }
 
 /* ---------- Decorative section header refinement ---------- */
 .section-header {
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 .section-header::before { display: none; }
 .section-header .display-title {
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   font-size: 44px;
   line-height: 1.1;
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
   display: block;
 }
 .section-header .display-title em {
-  font-style: italic;
+  font-style: normal;
   color: var(--accent);
 }
 .section-header p {
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 }
 #hero h1 .serif {
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   color: #ffd2db;
   display: block;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 }
 #about h2 {
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   font-size: 56px;
   line-height: 1.1;
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
   margin-bottom: 40px;
   max-width: 920px;
 }
-#about h2 em { color: #ffd2db; font-style: italic; }
+#about h2 em { color: #ffd2db; font-style: normal; }
 #about p {
   color: rgba(255,255,255,0.85);
   font-size: 17px;
@@ -269,8 +269,26 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 #about p em {
   color: var(--accent);
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
+}
+#about .about-takeaways {
+  margin-top: 12px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.78);
+  max-width: 1000px;
+}
+#about .about-takeaways-label {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  margin-right: 12px;
 }
 @media (max-width: 768px) {
   #about h2 { font-size: 32px; }
@@ -312,7 +330,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
   right: -8px;
   top: -28px;
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-weight: 200;
   font-size: 180px;
   line-height: 1;
@@ -410,7 +428,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 }
 .quote-banner p {
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   font-size: 30px;
   line-height: 1.35;
@@ -560,7 +578,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 .schedule-table tr.break-row td {
   background: #fff8e1 !important;
   color: #8a6d3b !important;
-  font-style: italic;
+  font-style: normal;
 }
 .schedule-table tr.welcome-row td {
   background: #e7f3ff !important;
@@ -673,7 +691,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
   color: var(--ink-soft);
   font-size: 14px;
   margin-top: 6px;
-  font-style: italic;
+  font-style: normal;
   font-family: var(--serif);
   font-weight: 400;
 }
@@ -714,7 +732,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 .materials-card h4 {
   color: #fff !important;
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   font-size: 32px;
   letter-spacing: -0.01em;
@@ -865,7 +883,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 }
 .reading-module h3 .module-number {
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   color: var(--accent);
   font-size: 26px;
@@ -885,7 +903,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 .papers-group:first-of-type { margin-top: 24px; }
 .papers-group .group-label {
   font-family: var(--display);
-  font-style: italic;
+  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   color: var(--navy);
@@ -959,3 +977,6 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--display); color: var(--navy); }
 
 /* ---------- AOS animation polish ---------- */
 [data-aos] { will-change: transform, opacity; }
+
+/* ---------- Academic refinement: no italics (emphasis carried by color/weight) ---------- */
+em, i, cite, .serif, .serif-quote { font-style: normal; }
